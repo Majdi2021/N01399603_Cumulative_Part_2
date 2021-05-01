@@ -1,0 +1,18 @@
+﻿@model N01399603_Cumulative_Part_2.Models.Teacher
+
+@{
+    ViewBag.Title = "Show";
+}
+
+<div id="containershow">
+    <nav>
+        <a class="navlink" href="/Teacher/List">Back To Teacher</a>
+        <a class="dellink" href="/Teacher/DeleteConfirm/@Model.teacherid">Delete</a>
+    </nav>
+    <h2>@Model.teacherfname @Model.teacherlname</h2>
+    <p style="font-style:italic;">Teacher ID @Model.teacherid</p>
+    <p style="font-style:italic;">Employee Number @Model.employeenumber</p>
+    <p style="font-style:italic;">Teacher Since @Model.hiredate</p>
+    <p style="font-style:italic;">Salary @Model.salary</p>
+
+</div>
